@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" >
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axit</title>
+    <link rel="stylesheet" href="./dist/font-awesome.min.css" />
+    <link href="./dist/output.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body class="font-sans">
+    <!-- Start Navbar -->
+    <nav class="navbar bg-black/90 shadow-md w-full">
+      <div class="container">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo -->
+          <a href="#" class="logo text-4xl">Axit</a>
+          
+          <!-- Hamburger Icon for Mobile -->
+          <div class="block md:hidden">
+            <button class="toggler" id="navbar-toggler">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+    
+          <!-- Navbar Links -->
+          <div class="hidden md:flex space-x-8">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#reviews" class="nav-link">Reviews</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Mobile Menu -->
+      <div class="hidden container pb-4 transition-all ease-in-out duration-500" id="mobile-menu">
+        <div class="divide-y divide-gray-400">
+          <a href="#features" class="nav-link py-3 block">Features</a>
+          <a href="#about" class="nav-link py-3 block">About</a>
+          <a href="#pricing" class="nav-link py-3 block">Pricing</a>
+          <a href="#reviews" class="nav-link py-3 block">Reviews</a>
+          <a href="#contact" class="nav-link py-3 block">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Hero -->
+    <div class="hero">
+        <div class="container h-full flex items-center justify-center">
+          <div class="grid lg:grid-cols-2 gap-10 relative z-20">
+            <div>
+              <h1 class="uppercase text-center lg:text-start font-bold text-6xl mb-2">
+                Ax<span class="font-normal text-secondary">it</span>
+              </h1>
+              <p class="uppercase text-3xl text-center lg:text-start after-heading after:bg-white">
+                Modern Axure Template For Beautiful Prototypes
+              </p>
+              <p class="text-center lg:text-start leading-[1.8] text-base">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+              </p>
+              <button class="main-btn">Download</button>
+            </div>
+            <div class="mx-auto lg:ms-auto">
+              <form class="w-[360px] bg-white rounded-md overflow-hidden">
+                <h2 class="text-center bg-gray-100 text-gray-700 text-[18px] p-4 font-bold mb-7">
+                  Try Your <span class="text-secondary">Free</span> Trial Today
+                </h2>
+                <input class="form-control" type="text" name="username" placeholder="Name" />
+                <input class="form-control" type="email" name="email" placeholder="Email" />
+                <input class="form-control" type="password" name="password" placeholder="Password" />
+                <input class="main-btn bg-secondary mx-auto mb-5" type="submit" value="Get Started" />
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- End Hero -->
+    <!-- Start Social Media -->
+    <div class="social-section py-5 shadow-sm text-center">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-5">
+          <div class="col-span-12 lg:col-span-4 lg:text-start">
+            <h2 class="text-xl font-bold mb-1">Social Media</h2>
+            <p class="leading-[1.7] text-gray-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+            </p>
+          </div>
+          <div class="col-span-12 lg:col-span-8 flex items-center justify-center lg:justify-end gap-4">
+            <i class="fa fa-facebook fa-3x fa-fw hover:text-[#3b5998]"></i>
+            <i class="fa fa-twitter fa-3x fa-fw hover:text-[#1da1f2]"></i>
+            <i class="fa fa-google-plus fa-3x fa-fw hover:text-[#dd4b39]"></i>
+            <i class="fa fa-pinterest fa-3x fa-fw hover:text-[#bd081c]"></i>
+            <i class="fa fa-instagram fa-3x fa-fw hover:text-[#5851db]"></i>
+            <i class="fa fa-stumbleupon fa-3x fa-fw hover:text-[#eb4924]"></i>
+            <i class="fa fa-rss fa-3x fa-fw hover:text-[#f26522]"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Social Medial -->
+    <!-- Start Tabs Section -->
+    <div class="tabs-section" id="features">
+      <div class="container">
+        <div class="grid grid-cols-12 gap-5">
+          <div class="col-span-12 md:col-span-2">
+            <ul class="tab-switch text-center grid grid-cols-3 gap-1 md:grid-cols-1 ">
+              <li class="selected" data-class=".tab-one">Tab 1</li>
+              <li data-class=".tab-two">Tab 2</li>
+              <li data-class=".tab-three">Tab 3</li>
+            </ul>
+          </div>
+          <div class="col-span-12 md:col-span-6">
+            <div class="tabs-content">
+              <div class="tab-one">
+                <h3>Tab Number One</h3>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="btn-content-tab">Download</button>
+              </div>
+              <div class="tab-two hidden">
+                <h3>Tab Number Two</h3>
+                <p class="lead">Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="btn-content-tab">Download</button>
+              </div>
+              <div class="tab-three hidden">
+                <h3>Tab Number Three</h3>
+                <p class="lead">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <button class="btn-content-tab">Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-span-12 md:col-span-4 flex items-center justify-center">
+            <img class="w-full mx-auto hidden md:block" src="img/home.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Tabs Section -->
+    <!-- Start Sublist Section -->
+    <div class="sublist">
+      <div class="container">
+        <div class="grid lg:grid-cols-2 gap-5">
+            <img class="w-full hidden lg:block" src="img/sublist.png" alt="" />
+
+            <div class="list-info">
+              <h3 class="sublist-head font-bold text-2xl after-heading">Sublist Section</h3>
+              <p class="sublist-desc text-gray-400 mb-7 text-base leading-[2] lg:leading-[1.6]">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+              <!-- Start List Icon -->
+              <div class="list-icon mb-7 flex items-center flex-col lg:flex-row gap-3">
+                <i class="fa fa-cloud-download fa-lg"></i>
+                <div class="text-info flex-1 text-center lg:text-start text-primary">
+                  <h4 class="text-[18px] font-medium mb-3 lg:mb-1">Download</h4>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                  </p>
+                </div>
+              </div>
+              <!-- End List Icon -->
+              <!-- Start List Icon -->
+              <div class="list-icon flex items-center flex-col lg:flex-row gap-3">
+                <i class="fa fa-cloud-upload fa-lg"></i>
+                <div class="text-info flex-1 text-center lg:text-start text-primary">
+                  <h4 class="text-[18px] font-medium mb-3 lg:mb-1">Upload</h4>
+                  <p class="text-sm">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+                  </p>
+                </div>
+              </div>
+              <!-- End List Icon -->
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Sublist Section -->
+    <!-- Start Standard Picture -->
+    <div class="standard-picture">
+      <div class="container">
+        <div class="grid md:grid-cols-2 gap-5">
+            <div class="list-info">
+              <h3 class="after-heading after:md:mx-0 text-2xl font-bold">Standard Picture</h3>
+              <p class="text-gray-400 leading-[1.6] lg:leading-[2]">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+
+            <img  class="mx-auto" src="img/standard.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End Standard Picture -->
+    <!-- Start This Is Awesome -->
+    <div class="awesome text-center py-20" id="about">
+      <div class="container">
+        <h2 class="main-heading text-2xl md:text-4xl">Why This is Awesome</h2>
+        <p class="mb-12 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+          <div class="feat-box">
+            <i class="fa fa-lightbulb-o fa-2x"></i>
+            <h3 class="feat-head">Thoughtful Design</h3>
+            <p class="feat-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+          </div>
+          <div class="feat-box">
+            <i class="fa fa-keyboard-o fa-2x"></i>
+            <h3 class="feat-head">Well Crafted</h3>
+            <p class="feat-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+          </div>
+          <div class="feat-box">
+            <i class="fa fa-flash fa-2x"></i>
+            <h3 class="feat-head">Easy To Customize</h3>
+            <p class="feat-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End This Is Awesome -->
+    <!-- Start Price Section -->
+    <div class="price-options text-center py-10 md:py-20 bg-backSction" id="pricing">
+      <div class="container">
+        <h2 class="main-heading text-2xl sm:text-4xl">Pricing Options</h2>
+        <p class="mb-6 md:mb-12 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="price-box lg:mt-[39px] bg-white">
+              <h3 class="plan-head">Basic</h3>
+              <!-- Start Option Price -->
+              <div class="option-price">
+                <span class="price">
+                  <span class="text-3xl">$</span>0
+                </span>
+                <span class="period">Free For Life</span>
+              </div>
+              <!-- End Option Price -->
+              <!-- Start Configuration -->
+              <ul class="divide-y divide-gray-200">
+                <li>1 GB Of Space</li>
+                <li>10 GB Of Bandwidth</li>
+                <li>3 Websites</li>
+                <li>Basic Customization</li>
+                <li>WordPress Integration</li>
+                <li>Email Support</li>
+              </ul>
+              <!-- End Configuration -->
+            </div>
+
+            <div class="price-box  bg-white">
+              <h3 class="plan-head">Professional</h3>
+              <!-- Start Option Price -->
+              <div class="option-price">
+                <span class="price">
+                  <span class="text-3xl">$</span>19
+                </span>
+                <span class="period">Monthly Payment</span>
+              </div>
+              <p class="most-pop">Our Most Popular</p>
+              <!-- End Option Price -->
+              <!-- Start Configuration -->
+              <ul class="divide-y divide-gray-200">
+                <li>5 GB Of Space</li>
+                <li>50 GB Of Bandwidth</li>
+                <li>12 Websites</li>
+                <li>Advanced Customization</li>
+                <li>WordPress Customization</li>
+                <li>Email Support</li>
+              </ul>
+              <!-- End Configuration -->
+            </div>
+
+            <div class="price-box lg:mt-[39px] bg-white">
+              <h3 class="plan-head">Enterprise</h3>
+              <!-- Start Option Price -->
+              <div class="option-price">
+                <span class="price">
+                  <span class="text-3xl">$</span>70
+                </span>
+                <span class="period">Monthly Payment</span>
+              </div>
+              <!-- End Option Price -->
+              <!-- Start Configuration -->
+              <ul class="divide-y divide-gray-200">
+                <li>Unlimited Space</li>
+                <li>Unlimited Bandwidth</li>
+                <li>100 Websites</li>
+                <li>Advanced Customization</li>
+                <li>WordPress Customization</li>
+                <li>24/7 Customer Support</li>
+              </ul>
+              <!-- End Configuration -->
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Price Section -->
+    <!-- Start Testimonials -->
+    <div class="testimonials py-10 md:py-20" id="reviews">
+      <div class="container">
+        <h2 class="main-heading">
+          What Our Customers Are Saying
+        </h2>
+        <p class="mb-10 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+          <!-- Start Column 4 -->
+          <div>
+            <p class="client-say">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <div class="media">
+              <div class="media-left">
+                <img class="w-full h-full" src="img/avatar.png" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Jeremy H.</h4>
+                <p>Manager</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Column 4 -->
+          <!-- Start Column 4 -->
+          <div>
+            <p class="client-say">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="media">
+              <div class="media-left">
+                <img class="w-full h-full" src="img/avatar.png" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">John S.</h4>
+                <p>Freelancer</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Column 4 -->
+          <!-- Start Column 4 -->
+          <div>
+            <p class="client-say">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="media">
+              <div class="media-left">
+                <img class="w-full h-full" src="img/avatar.png" alt="">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Susan W.</h4>
+                <p>Photographer</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Column 4 -->
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials -->
+    <!-- Start Stylish -->
+    <div class="stylish">
+        <div class="container">
+          <div class="content">
+            <h2 class="stylish-head after-heading after:mx-auto uppercase text-center">
+              Stylish Axure Design
+            </h2>
+            <p class="text-center text-gray-400">
+              Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than ever!.
+            </p>
+            <button class="main-btn mx-auto rounded-none">Download</button>
+          </div>
+        </div>
+    </div>
+    <!-- End Stylish -->
+    <!-- Start Contact Us -->
+    <div class="contact-us py-10 md:py-20" id="contact">
+      <div class="container">
+        <h2 class="main-heading">Contact Us</h2>
+        <p class="mb-10 text-gray-400 text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+
+          <form class="contact grid md:grid-cols-2 gap-7">
+            <div>
+              <input class="form-control" autocomplete="none" type="text" placeholder="Name" />
+              <input class="form-control" autocomplete="none" type="email" placeholder="Email" />
+              <input class="form-control" type="text" placeholder="Subject" />
+            </div>
+            <div>
+              <textarea class="form-control min-h-[165px] mb-0" placeholder="Message"></textarea>
+            </div>
+          </form>
+
+        <button class="main-btn bg-secondary text-white mx-auto">Send Message</button>
+      </div>
+    </div>
+    <!-- End Contact Us -->
+    <!-- Start Footer -->
+    <div class="footer text-base py-5 bg-black text-white text-center">
+      &copy; Axure Themes <span class="date-now"></span> By ELASY
+    </div>
+    <!-- End Footer -->
+    <!-- Start Back To Top Button -->
+    <i class="fa fa-angle-double-up btn-scroll-top"></i>
+    <!-- End Back To Top Button -->
+
+
+    <script src="./main.js"></script>
+  </body>
+</html>
