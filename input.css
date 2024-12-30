@@ -2,104 +2,148 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .main-btn{
-    @apply block mt-5 sm:mt-7 mx-auto lg:mx-0 py-2 px-4 cursor-pointer rounded-md border-2 border-white hover:bg-secondary  transition-all duration-300 ;
-    }
-    .after-heading:after {
-    content: '';
+@layer components {
+  .main-btn {
+    @apply block mt-5 sm:mt-7 mx-auto lg:mx-0 py-2 px-4 cursor-pointer rounded-md border-2 border-white hover:bg-secondary  transition-all duration-300;
+  }
+  .after-heading:after {
+    content: "";
     @apply block w-20 h-[2px] bg-secondary mx-auto lg:mx-0 my-6;
-    }
-    .main-heading{
-        @apply after-heading after:mx-auto text-xl sm:text-2xl font-bold uppercase text-center;
-    }
-    /* Start Navbar  */
-    .navbar a{
-        @apply text-gray-200 hover:text-secondary transition-all duration-300 ;
-    }
-    .navbar .toggler{
-        @apply text-gray-300 hover:text-white focus:outline-none border-2 border-gray-400 hover:border-white py-1 px-2 rounded-md transition-all duration-300;
-    }
-    /* End Navbar */ 
-    /* Start Hero */ 
-    .hero {
-        @apply relative text-white bg-cover bg-[url('../img/header.png')] h-[calc(100vh-64px)];
-    }
-    .hero::after{
-        content:"";
-        @apply absolute inset-0 bg-black/65 z-10;
-    }
-    .hero form .form-control {
+  }
+  .main-heading {
+    @apply after-heading after:mx-auto text-xl sm:text-2xl font-bold uppercase text-center;
+  }
+  /* Start Navbar  */
+  .navbar a {
+    @apply text-gray-200 hover:text-secondary transition-all duration-300;
+  }
+  .navbar .toggler {
+    @apply text-gray-300 hover:text-white focus:outline-none border-2 border-gray-400 hover:border-white py-1 px-2 rounded-md transition-all duration-300;
+  }
+  /* End Navbar */
+  /* Start Hero */
+  .hero {
+    @apply relative text-white bg-cover bg-[url('../img/header.png')] min-h-screen;
+  }
+  .hero::after {
+    content: "";
+    @apply absolute inset-0 bg-black/65 z-10;
+  }
+  .hero form .form-control {
     @apply block py-2 px-3 border-b border-gray-300 w-[80%] mx-auto mb-5 focus:outline-0 caret-secondary text-black;
-    }
-    /* End Hero */
-    /* Start Social Media*/
-    .social-section i {@apply text-gray-300 cursor-pointer transition-all duration-300;}
-    /* End Social Media*/
-    /*Start Tabs Section */
-    .tabs-section{@apply py-20 bg-backSction text-center md:text-start}
-    .tabs-section .tab-switch li {
+  }
+  /* End Hero */
+  /* Start Social Media*/
+  .social-section i {
+    @apply text-gray-300 cursor-pointer transition-all duration-300;
+  }
+  /* End Social Media*/
+  /*Start Tabs Section */
+  .tabs-section {
+    @apply py-20 bg-backSction text-center md:text-start;
+  }
+  .tabs-section .tab-switch li {
     @apply bg-[#333] text-white h-24 flex items-center justify-center text-xl uppercase cursor-pointer hover:bg-secondary transition-all duration-300;
-    }
-    .tabs-section .tab-switch li.selected{@apply bg-secondary;}
-    .tabs-section .tabs-content h3 {@apply font-bold tracking-tight mt-7 md:mt-0 md:mb-3;}
-    .tabs-section .tabs-content .lead {@apply leading-[1.9] text-base text-gray-500;}
-    .tabs-section .btn-content-tab{
-        @apply main-btn bg-secondary text-white text-sm mt-3 md:mx-0;
-    }
-    /* End Tabs Section */
-    /* Start Sublist Section */
-    .sublist{@apply py-10 text-center md:py-20 lg:text-start;}
-    .sublist .list-icon i {@apply w-10 h-10 rounded-full flex items-center justify-center 
+  }
+  .tabs-section .tab-switch li.selected {
+    @apply bg-secondary;
+  }
+  .tabs-section .tabs-content h3 {
+    @apply font-bold tracking-tight mt-7 md:mt-0 md:mb-3;
+  }
+  .tabs-section .tabs-content .lead {
+    @apply leading-[1.9] text-base text-gray-500;
+  }
+  .tabs-section .btn-content-tab {
+    @apply main-btn bg-secondary text-white text-sm mt-3 md:mx-0;
+  }
+  /* End Tabs Section */
+  /* Start Sublist Section */
+  .sublist {
+    @apply py-10 text-center md:py-20 lg:text-start;
+  }
+  .sublist .list-icon i {
+    @apply w-10 h-10 rounded-full flex items-center justify-center 
     text-secondary border-2 border-secondary;
-    }
-    /* End Sublist Section */
-    /*Start Standard Picture */
-    .standard-picture{@apply py-10 md:py-20 text-center md:text-start bg-backSction}
-    /*End Standard Picture */
-    /*Start Awesome Section */
-    .awesome i {
-        @apply text-secondary w-16 h-16 leading-[64px] border-2 border-secondary rounded-full;
-    }
-    .awesome .feat-head {@apply font-bold my-5;}
-    .awesome .feat-info {@apply text-gray-400 leading-[1.7] lg:max-w-[300px];}
-    /*End Awesome Section */
-    /*Start Pricing Options */
-    .price-options .price-box .plan-head {@apply bg-gray-800 text-white py-4;}
-    .price-options .price-box .option-price {@apply bg-gray-800 pb-4 border-b-4 border-secondary;}
-    .price-options .option-price .price {@apply text-6xl text-white block font-bold mb-3 ;}
-    .price-options .option-price .period {@apply text-gray-500 font-bold italic;}
-    .price-options ul li {@apply p-3 text-gray-400 ;}
-    .price-options .most-pop {@apply bg-secondary text-white py-2 font-bold;}
-    /*End Pricing Options */
-    /*Start Testimonials */
-    .testimonials .client-say {@apply bg-[#F5F5F5] text-gray-400 p-5 relative mb-5;}
-    .testimonials .client-say:after {
-        content: '';
-        @apply  border-[15px] border-[#f5f5f5] border-b-transparent border-x-transparent absolute -bottom-7 left-5 ; 
-    }
-    .testimonials .media{@apply flex items-center gap-5 mt-7;}
-    .testimonials .media .media-left{@apply h-16 w-16 rounded-full ring ring-gray-200 ring-offset-4}
-    .testimonials .media-heading {@apply font-bold  mb-1;}
-    .testimonials .media-body p {@apply text-gray-400 text-sm; }
-    /*End Testimonials */
-    /*Start Stylish */
-    .stylish{
-        @apply relative text-white min-h-[320px] bg-cover bg-[url('../img/stylish.png')];
-    }
-    .stylish::after{
-        content:"";
-        @apply absolute inset-0 bg-black/60 z-10 ;
-    }
-    .stylish .after-heading:after {@apply bg-white ;}
-    .stylish .content{@apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 }
-    /*End Stylish */
-    /* Start Contact us*/
-    .contact-us .form-control{
-        @apply block py-2 px-3 border-b border-gray-300 w-full mb-5 focus:outline-0 caret-secondary text-black;
-    }
-    .btn-scroll-top{
-        @apply hidden fixed bottom-5 right-5 w-10 h-10 bg-secondary text-white rounded-full text-center leading-10 z-20 cursor-pointer transition-all duration-700;
-    }
+  }
+  /* End Sublist Section */
+  /*Start Standard Picture */
+  .standard-picture {
+    @apply py-10 md:py-20 text-center md:text-start bg-backSction;
+  }
+  /*End Standard Picture */
+  /*Start Awesome Section */
+  .awesome i {
+    @apply text-secondary w-16 h-16 leading-[64px] border-2 border-secondary rounded-full;
+  }
+  .awesome .feat-head {
+    @apply font-bold my-5;
+  }
+  .awesome .feat-info {
+    @apply text-gray-400 leading-[1.7] lg:max-w-[300px];
+  }
+  /*End Awesome Section */
+  /*Start Pricing Options */
+  .price-options .price-box .plan-head {
+    @apply bg-gray-800 text-white py-4;
+  }
+  .price-options .price-box .option-price {
+    @apply bg-gray-800 pb-4 border-b-4 border-secondary;
+  }
+  .price-options .option-price .price {
+    @apply text-6xl text-white block font-bold mb-3;
+  }
+  .price-options .option-price .period {
+    @apply text-gray-500 font-bold italic;
+  }
+  .price-options ul li {
+    @apply p-3 text-gray-400;
+  }
+  .price-options .most-pop {
+    @apply bg-secondary text-white py-2 font-bold;
+  }
+  /*End Pricing Options */
+  /*Start Testimonials */
+  .testimonials .client-say {
+    @apply bg-[#F5F5F5] text-gray-400 p-5 relative mb-5;
+  }
+  .testimonials .client-say:after {
+    content: "";
+    @apply border-[15px] border-[#f5f5f5] border-b-transparent border-x-transparent absolute -bottom-7 left-5;
+  }
+  .testimonials .media {
+    @apply flex items-center gap-5 mt-7;
+  }
+  .testimonials .media .media-left {
+    @apply h-16 w-16 rounded-full ring ring-gray-200 ring-offset-4;
+  }
+  .testimonials .media-heading {
+    @apply font-bold  mb-1;
+  }
+  .testimonials .media-body p {
+    @apply text-gray-400 text-sm;
+  }
+  /*End Testimonials */
+  /*Start Stylish */
+  .stylish {
+    @apply relative text-white min-h-[320px] bg-cover bg-[url('../img/stylish.png')];
+  }
+  .stylish::after {
+    content: "";
+    @apply absolute inset-0 bg-black/60 z-10;
+  }
+  .stylish .after-heading:after {
+    @apply bg-white;
+  }
+  .stylish .content {
+    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20;
+  }
+  /*End Stylish */
+  /* Start Contact us*/
+  .contact-us .form-control {
+    @apply block py-2 px-3 border-b border-gray-300 w-full mb-5 focus:outline-0 caret-secondary text-black;
+  }
+  .btn-scroll-top {
+    @apply hidden fixed bottom-5 right-5 w-10 h-10 bg-secondary text-white rounded-full text-center leading-10 z-20 cursor-pointer transition-all duration-700;
+  }
 }
-

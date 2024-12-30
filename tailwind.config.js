@@ -2,21 +2,20 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
-    container : {
+    container: {
       center: true,
-      padding: "1rem",
+      padding: "2rem",
     },
     extend: {
       colors: {
         primary: "#31708F",
         secondary: "#ff8b38",
-        backSction:"#f5f5f5"
+        backSction: "#f5f5f5",
       },
       fontFamily: {
-        sans: ['Open Sans', 'sans-serif'],
+        sans: ["Open Sans", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
-
+};
