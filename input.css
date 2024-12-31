@@ -23,7 +23,7 @@
   /* End Navbar */
   /* Start Hero */
   .hero {
-    @apply relative text-white bg-cover bg-[url('../img/header.png')] min-h-screen;
+    @apply relative text-white bg-cover bg-[url('../img/header.png')] min-h-[calc(100vh-64px)] py-10 lg:py-0;
   }
   .hero::after {
     content: "";
